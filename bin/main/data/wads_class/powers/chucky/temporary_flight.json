@@ -1,0 +1,356 @@
+{
+    "type": "origins:multiple",
+    "name": "power.wads_class.temporary_flight.name",
+    "description": "power.wads_class.temporary_flight.description",
+    "flight": {
+        "type": "origins:creative_flight",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_flight_active",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "activate": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_flight_active",
+                    "change": 300
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"Полёт активирован!\",\"color\":\"green\"}"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.blaze.shoot",
+                    "volume": 0.5,
+                    "pitch": 1.5
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.5 ^1 ^ 0.2 0.7 0.2 0.01 50 normal"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.5 ^1 ^ 0.2 0.7 0.2 0.01 50 normal"
+                }
+            ]
+        },
+        "cooldown": 1200,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 4
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "fire_wings": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.1 ^1.5 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.1 ^1.5 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.1 ^1.25 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.1 ^1.25 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.1 ^1 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.1 ^1 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.35 ^1.5 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.35 ^1.5 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.35 ^1.25 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.35 ^1.25 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.35 ^1 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.35 ^1 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.35 ^0.75 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.35 ^0.75 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.35 ^0.50 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.35 ^0.50 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.35 ^1.75 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.35 ^1.75 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.60 ^0.50 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.60 ^0.50 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.60 ^0.75 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.60 ^0.75 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.60 ^0.25 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.60 ^0.25 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.60 ^1.75 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.60 ^2 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.60 ^1.5 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.60 ^1.5 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.60 ^1.75 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.60 ^2 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.85 ^0.25 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.85 ^0 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.85 ^0.5 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.85 ^0.25 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.85 ^0 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.85 ^0.5 ^-0.3 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.85 ^2 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^0.85 ^1.75 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.85 ^2 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.85 ^1.75 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-0.85 ^2.25 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^1.10 ^2 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^1.10 ^1.75 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^1.10 ^2.25 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^1.10 ^2.5 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-1.10 ^2 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-1.10 ^1.75 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-1.10 ^2.25 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-1.10 ^2.5 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^1.35 ^2 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^1.35 ^2.25 ^-0.2 0.01 0.01 0.01 0 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ^-1.35 ^2 ^-0.2 0.01 0.01 0.01 0 1"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_flight_active",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "deactivate": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_flight_active",
+                    "change": -1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:smoke ~ ~1 ~ 0.2 0.2 0.2 0.05 1"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_flight_active",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "end_flight": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"Полёт деактивирован\",\"color\":\"red\"}"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 0.5,
+                    "pitch": 1.0
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:smoke ~ ~1 ~ 0.5 0.5 0.5 0.1 50"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_flight_active",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_flight"
+                }
+            ]
+        }
+    },
+    "flight_active": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 300,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 5,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_flight_active",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "type": "origins:multiple",
+    "timer": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 6000,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 7,
+        "condition": {
+          "type": "origins:resource",
+          "resource": "*:*_timer",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      }
+    },
+    "increase_timer": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "*:*_timer",
+        "change": 1
+      },
+      "interval": 1,
+      "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
+      }
+    },
+    "decrease_timer": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "*:*_timer",
+        "change": -10
+      },
+      "interval": 5,
+      "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether",
+        "inverted": true
+      }
+    },
+    "apply_effects": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+          {
+            "effect": "minecraft:weakness",
+            "duration": 220,
+            "amplifier": 0,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false
+          },
+          {
+            "effect": "minecraft:slowness",
+            "duration": 220,
+            "amplifier": 0,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false
+          },
+          {
+            "effect": "minecraft:mining_fatigue",
+            "duration": 220,
+            "amplifier": 0,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false
+          }
+        ]
+      },
+      "interval": 200,
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:resource",
+            "resource": "*:*_timer",
+            "comparison": ">=",
+            "compare_to": 6000
+          },
+          {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+          }
+        ]
+      }
+    }
+  }

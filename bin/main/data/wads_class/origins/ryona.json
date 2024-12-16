@@ -1,0 +1,14 @@
+{
+    "powers": [
+      "wads_class:ryona/fall",
+      "wads_class:ryona/jump",
+      "wads_class:ryona/dash",
+      "wads_class:ryona/jump_boost",
+      "wads_class:ryona/friend"
+    ],
+    "icon": "minecraft:goat_horn",
+    "order": 3,
+    "impact": 3,
+    "name": "origin.wads_class.ryona.name",
+    "description": "origin.wads_class.ryona.description"
+  }

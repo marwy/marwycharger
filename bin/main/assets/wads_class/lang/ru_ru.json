@@ -1,0 +1,104 @@
+{
+  "origin.wads_class.marwy.name": "Марви",
+  "origin.wads_class.marwy.description": "Марви милый робот с эмоциями и чувствами, а может он и симулирует, никто не знает",
+
+  "power.wads_class.marwy/nether_sickness.name": "АААААА ЖАРКО ВКЛЮЧАЕМ ВЕНТЕЛЯТОРЫ",
+  "power.wads_class.marwy/nether_sickness.description": "После 5 минут в Нижнем мире марви перегревается",
+
+  "power.wads_class.marwy/iron_golem_walk.name": "КАК ПЛАВАТЬ",
+  "power.wads_class.marwy/iron_golem_walk.description": "Марви ходит по дну как железный голем",
+
+  "power.wads_class.marwy/permanent_haste.name": "КАПАТЬ КАПАТЬ КАПАТЬ",
+  "power.wads_class.marwy/permanent_haste.description": "У марви бесконечный эффект спешки",
+
+  "power.wads_class.marwy/robot_energy.name": "Энергия робота",
+  "power.wads_class.marwy/robot_energy.description": "У марви есть запас энергии, который нужно пополнять",
+
+  "power.wads_class.marwy/no_hunger.name": "ДА КТО ЭТА ВАША ЕДА",
+  "power.wads_class.marwy/no_hunger.description": "Марви не чувствуете голода, но тратите энергию вместо еды",
+
+  "power.wads_class.marwy/robot_energy_drain.name": "Расход энергии",
+  "power.wads_class.marwy/robot_energy_drain.description": "Ваша энергия медленно расходуется со временем",
+
+  "power.wads_class.marwy/no_breathing.name": "Кислород для слабоков",
+  "power.wads_class.marwy/no_breathing.description": "У вас подводное дыхание",
+
+  "power.wads_class.marwy/low_energy.name": "Низкий заряд",
+  "power.wads_class.marwy/low_energy.description": "При нулевой энергии марви не может двигаться и ничего не видит",
+
+  "power.wads_class.marwy/no_villager_trade.name": "Нет торговли с жителями",
+  "power.wads_class.marwy/no_villager_trade.description": "Вы не можете торговать с жителями деревень",
+
+  "power.wads_class.marwy/friend.name": "Дружеская мощная рука",
+  "power.wads_class.marwy/friend.description": "Вы можете дать ближайшим существам эффект спешки 3 уровня на 30 секунд.",
+
+  "power.wads_class.marwy/energy_heal.name": "Ну лан все таки добавил хилл))",
+  "power.wads_class.marwy/energy_heal.description": "Вы можете лечиться энергией",
+
+
+
+  "origin.wads_class.chucky.name": "Чаки",
+  "origin.wads_class.chucky.description": "Чаки - демон вот крч чилит в лаве с кайфом :3",
+
+  "power.wads_class.chucky/fire_immunity.name": "Чиловая лава",
+  "power.wads_class.chucky/fire_immunity.description": "Вы невосприимчивы к огню и лаве",
+
+  "power.wads_class.chucky/water_freeze.name": "ХОЛОДНО ВОДА",
+  "power.wads_class.chucky/water_freeze.description": "Вы замерзаете при контакте с водой",
+
+  "power.wads_class.chucky/nether_resistance.name": "Адская сигма",
+  "power.wads_class.chucky/nether_resistance.description": "В Нижнем мире вы получаете дополнительную защиту и урон",
+
+  "power.wads_class.chucky/rain_damage.name": "АААА ДОЖДЬ",
+  "power.wads_class.chucky/rain_damage.description": "Дождь наносит вам небольшой урон",
+
+  "power.wads_class.chucky/temporary_flight.name": "Крылья демона",
+  "power.wads_class.chucky/temporary_flight.description": "Вы можете летать в течение 10 секунд, после чего требуется 30 секунд для восстановления",
+
+  "power.wads_class.chucky/lava_charge.name": "Лавазависимая :)",
+  "power.wads_class.chucky/lava_charge.description": "Вам нужно заряжаться лавой",
+
+  "power.wads_class.chucky/lava_vision.name": "Лававидение",
+  "power.wads_class.chucky/lava_vision.description": "Вы можете видеть в лаве",
+
+  "power.wads_class.chucky/lava_swimming.name": "Плавание в лаве как дельфин в воде",
+  "power.wads_class.chucky/lava_swimming.description": "Вы можете плавать в лаве",
+
+
+  "origin.wads_class.zero.name": "Зеро",
+  "origin.wads_class.zero.description": "Зеро крч акселотль епта",
+
+  "power.wads_class.zero/nether_discomfort.name": "ЖАРКО ВКЛЮЧАЕМ ВЕНТЕЛЯТОРЫ",
+  "power.wads_class.zero/nether_discomfort.description": "Вы чувствуете дискомфорт в Незере.",
+
+  "power.wads_class.zero/water_abilities.name": "Я ВОДА ЛЮБИТЬ",
+  "power.wads_class.zero/water_abilities.description": "Крч ты хилишься в воде, ты еще можешь давать вокруг людям эффект",
+
+  "power.wads_class.zero/water_dependency.name": "Я ВОДА ЗАВИСИМОСТЬ",
+  "power.wads_class.zero/water_dependency.description": "Вам нужно оставаться увлажненным, чтобы выжить.",
+
+  "power.wads_class.zero/strength_and_speed.name": "СИЛа И скОроСть",
+  "power.wads_class.zero/strength_and_speed.description": "Ну типа сильный и быстрый",
+
+  "power.wads_class.zero/nether_timer.name": "В аду по билетику",
+  "power.wads_class.zero/nether_timer.description": "Вы можете оставаться в Незере только ограниченное время. (5 минут)",
+
+
+  "origin.wads_class.ryona.name": "Рёна",
+  "origin.wads_class.ryona.description": "Рён крч барашек бее",
+
+  "power.wads_class.ryona/fall.name": "Высота да мне похуй",
+  "power.wads_class.ryona/fall.description": "Вы получаете меньше урона от падения на 67%.",
+
+  "power.wads_class.ryona/jump.name": "Попрыгунчик",
+  "power.wads_class.ryona/jump.description": "Мощно прыгать хз как наверно пердишь мощно",
+
+  "power.wads_class.ryona/dash.name": "Рывок я вахуе быстрый 4к",
+  "power.wads_class.ryona/dash.description": "Вы можете совершать быстрый рывок в любом направлении.",
+
+  "power.wads_class.ryona/jump_boost.name": "Мощь барашки",
+  "power.wads_class.ryona/jump_boost.description": "Ты крч прыгучесть два и скорость два воть.",
+
+  "power.wads_class.ryona/friend.name": "Дружеская подушка",
+  "power.wads_class.ryona/friend.description": "Вы можете дать ближайшим существам эффект медленного падения."
+}

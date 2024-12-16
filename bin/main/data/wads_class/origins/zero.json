@@ -1,0 +1,15 @@
+{
+    "powers": [
+      "wads_class:zero/nether_discomfort",
+      "wads_class:zero/water_abilities",
+      "wads_class:zero/water_dependency",
+      "wads_class:zero/strength_and_speed",
+      "wads_class:zero/nether_timer",
+      "wads_class:zero/growth"
+    ],
+    "icon": "minecraft:axolotl_bucket",
+    "order": 3,
+    "impact": 3,
+    "name": "origin.wads_class.zero.name",
+    "description": "origin.wads_class.zero.description"
+  }

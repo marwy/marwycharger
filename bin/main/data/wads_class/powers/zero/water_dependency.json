@@ -1,0 +1,118 @@
+{
+    "type": "origins:multiple",
+    "water_timer": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 24000,
+      "start_value": 24000,
+      "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 1
+      }
+    },
+    "water_drain": {
+      "type": "origins:action_over_time",
+      "interval": 1,
+      "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "*:*_water_timer",
+        "change": -1
+      },
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": "==",
+            "compare_to": 0
+          },
+          {
+            "type": "origins:on_block",
+            "block_condition": {
+              "type": "origins:block",
+              "block": "minecraft:water",
+              "inverted": true
+            }
+          },
+          {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether",
+            "inverted": true
+          }
+        ]
+      }
+    },
+    "nether_drain": {
+      "type": "origins:action_over_time",
+      "interval": 1,
+      "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "*:*_water_timer",
+        "change": -2
+      },
+      "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
+      }
+    },
+    "water_refill": {
+      "type": "origins:action_over_time",
+      "interval": 1,
+      "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "*:*_water_timer",
+        "change": 100
+      },
+      "condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0
+          },
+          {
+            "type": "origins:on_block",
+            "block_condition": {
+              "type": "origins:block",
+              "block": "minecraft:water"
+            }
+          }
+        ]
+      }
+    },
+    "apply_effect": {
+      "type": "origins:action_over_time",
+      "interval": 20,
+      "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:wither",
+          "duration": 40,
+          "amplifier": 0
+        }
+      },
+      "condition": {
+        "type": "origins:resource",
+        "resource": "*:*_water_timer",
+        "comparison": "==",
+        "compare_to": 0
+      }
+    },
+    "gray_skin": {
+    "type": "origins:model_color",
+    "red": 0.7,
+    "green": 0.7,
+    "blue": 0.7,
+    "alpha": 1.0,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_water_timer",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  }
+  }

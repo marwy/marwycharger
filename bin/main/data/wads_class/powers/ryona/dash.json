@@ -1,0 +1,28 @@
+{
+	"type":"origins:active_self",
+	"cooldown":250,
+	"hud_render":{
+		"sprite_location":"origins:textures/gui/resource_bar.png",
+		"bar_index":5
+	},
+	"entity_action":{
+		"type":"origins:and",
+		"actions":[
+			{
+				"type":"origins:execute_command",
+				"command":"effect give @s minecraft:strength 5 1 true"
+			},
+            {
+                "type":"origins:execute_command",
+                "command":"effect give @s minecraft:speed 5 1 true"
+            },
+			{
+
+				"type":"origins:add_velocity",
+				"z":3,
+				"space":"local"
+			}
+		]
+	},
+	"key":"key.origins.primary_active"
+}

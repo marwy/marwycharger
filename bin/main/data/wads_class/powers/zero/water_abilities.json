@@ -1,0 +1,65 @@
+{
+    "type": "origins:multiple",
+    "water_breathing": {
+      "type": "origins:action_over_time",
+      "interval": 20,
+      "entity_action": {
+        "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:water_breathing",
+        "duration": 40,
+        "amplifier": 0,
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": false
+        }
+      }
+    },
+    "water_regeneration": {
+      "type": "origins:action_over_time",
+      "interval": 20,
+      "entity_action": {
+        "type": "origins:heal",
+        "amount": 1
+      },
+      "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:block",
+          "block": "minecraft:water"
+        }
+      }
+    },
+    "dolphin_grace": {
+      "type": "origins:active_self",
+      "entity_action": {
+        "type": "origins:execute_command",
+        "command": "effect give @e[distance=..4] minecraft:dolphins_grace 15 1"
+      },
+      "cooldown": 600,
+      "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 5
+      },
+      "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+      }
+    },
+    "fast_swimming": {
+      "type": "origins:action_over_time",
+      "interval": 20,
+      "entity_action": {
+        "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:dolphins_grace",
+        "duration": 40,
+        "amplifier": 0,
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": false
+        }
+      }
+    }
+  }

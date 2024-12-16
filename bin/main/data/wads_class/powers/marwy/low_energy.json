@@ -1,0 +1,45 @@
+{
+    "type": "origins:multiple",
+    "immobilize": {
+      "type": "origins:stacking_status_effect",
+      "min_stacks": 1,
+      "max_stacks": 1,
+      "duration_per_stack": 40,
+      "effects": [
+        {
+          "effect": "minecraft:slowness",
+          "amplifier": 255,
+          "is_ambient": true,
+          "show_particles": false,
+          "show_icon": false
+        }
+      ],
+      "condition": {
+        "type": "origins:resource",
+        "resource": "wads_class:marwy/robot_energy",
+        "comparison": "==",
+        "compare_to": 0
+      }
+    },
+    "blindness": {
+      "type": "origins:stacking_status_effect",
+      "min_stacks": 1,
+      "max_stacks": 1,
+      "duration_per_stack": 40,
+      "effects": [
+        {
+          "effect": "minecraft:blindness",
+          "amplifier": 0,
+          "is_ambient": true,
+          "show_particles": false,
+          "show_icon": false
+        }
+      ],
+      "condition": {
+        "type": "origins:resource",
+        "resource": "wads_class:marwy/robot_energy",
+        "comparison": "==",
+        "compare_to": 0
+      }
+    }
+  }

@@ -1,0 +1,20 @@
+{
+  "powers": [
+    "wads_class:marwy/nether_sickness",
+    "wads_class:marwy/iron_golem_walk",
+    "wads_class:marwy/permanent_haste",
+    "wads_class:marwy/robot_energy",
+    "wads_class:marwy/no_hunger",
+    "wads_class:marwy/robot_energy_drain",
+    "wads_class:marwy/no_breathing",
+    "wads_class:marwy/low_energy",
+    "wads_class:marwy/no_villager_trade",
+    "wads_class:marwy/friend",
+    "wads_class:marwy/energy_heal"
+  ],
+  "icon": "minecraft:iron_block",
+  "order": 3,
+  "impact": 3,
+  "name": "origin.wads_class.marwy.name",
+  "description": "origin.wads_class.marwy.description"
+}

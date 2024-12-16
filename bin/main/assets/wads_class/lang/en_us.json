@@ -1,0 +1,104 @@
+{
+    "origin.wads_class.marwy.name": "Marwy",
+    "origin.wads_class.marwy.description": "Marwy is a cute robot with emotions and feelings, or maybe he's just simulating, nobody knows",
+  
+    "power.wads_class.marwy.nether_sickness.name": "Nether Sickness",
+    "power.wads_class.marwy.nether_sickness.description": "After 5 minutes in the Nether, you get weakness, slowness, mining fatigue, and blindness effects",
+  
+    "power.wads_class.marwy.iron_golem_walk.name": "Iron Golem Walk",
+    "power.wads_class.marwy.iron_golem_walk.description": "You sink in water and move very slowly in it, like an iron golem",
+  
+    "power.wads_class.marwy.permanent_haste.name": "Permanent Haste",
+    "power.wads_class.marwy.permanent_haste.description": "You have a constant haste effect",
+  
+    "power.wads_class.marwy.robot_energy.name": "Robot Energy",
+    "power.wads_class.marwy.robot_energy.description": "You have an energy reserve that needs to be replenished",
+  
+    "power.wads_class.marwy.no_hunger.name": "No Hunger",
+    "power.wads_class.marwy.no_hunger.description": "You don't feel hunger, but you use energy instead of food",
+  
+    "power.wads_class.marwy.robot_energy_drain.name": "Energy Drain",
+    "power.wads_class.marwy.robot_energy_drain.description": "Your energy slowly drains over time",
+  
+    "power.wads_class.marwy.no_breathing.name": "No Breathing",
+    "power.wads_class.marwy.no_breathing.description": "You don't need to breathe underwater",
+  
+    "power.wads_class.marwy.low_energy.name": "Low Energy",
+    "power.wads_class.marwy.low_energy.description": "When your energy is zero, you can't move and can't see anything",
+  
+    "power.wads_class.marwy.no_villager_trade.name": "No Villager Trade",
+    "power.wads_class.marwy.no_villager_trade.description": "You cannot trade with villagers",
+  
+    "power.wads_class.marwy/friend.name": "Friendly Powerful Hand",
+    "power.wads_class.marwy/friend.description": "You can give nearby entities the haste effect level 3 for 30 seconds.",
+
+    "power.wads_class.marwy/energy_heal.name": "Energy Heal",
+    "power.wads_class.marwy/energy_heal.description": "You can heal yourself and restore energy",
+
+
+
+    "origin.wads_class.chucky.name": "Chucky",
+    "origin.wads_class.chucky.description": "Chucky is a demon, so he's chilling in the lava with pleasure :3",
+  
+    "power.wads_class.chucky.fire_immunity.name": "Fire Immunity",
+    "power.wads_class.chucky.fire_immunity.description": "You are immune to fire and lava",
+  
+    "power.wads_class.chucky.water_freeze.name": "Water Freeze",
+    "power.wads_class.chucky.water_freeze.description": "You freeze when in contact with water",
+  
+    "power.wads_class.chucky.nether_resistance.name": "Nether Strength",
+    "power.wads_class.chucky.nether_resistance.description": "You gain additional protection and damage in the Nether",
+  
+    "power.wads_class.chucky.rain_damage.name": "Rain Vulnerability",
+    "power.wads_class.chucky.rain_damage.description": "Rain deals small damage to you",
+  
+    "power.wads_class.chucky.temporary_flight.name": "Demon Wings",
+    "power.wads_class.chucky.temporary_flight.description": "You can fly for 10 seconds, then need 30 seconds to recharge",
+  
+    "power.wads_class.chucky.lava_charge.name": "Lava Dependent",
+    "power.wads_class.chucky.lava_charge.description": "You need to charge yourself with lava",
+  
+    "power.wads_class.chucky.lava_vision.name": "Lava Vision",
+    "power.wads_class.chucky.lava_vision.description": "You can see clearly in lava",
+  
+    "power.wads_class.chucky.lava_swimming.name": "Lava Swimming",
+    "power.wads_class.chucky.lava_swimming.description": "You can swim in lava like a dolphin in water",
+
+  
+    "origin.wads_class.zero.name": "Zero",
+    "origin.wads_class.zero.description": "A water-dependent being with enhanced abilities in aquatic environments.",
+  
+    "power.wads_class.zero.nether_discomfort.name": "Nether Discomfort",
+    "power.wads_class.zero.nether_discomfort.description": "You feel uncomfortable in the Nether.",
+  
+    "power.wads_class.zero.water_abilities.name": "Water Abilities",
+    "power.wads_class.zero.water_abilities.description": "You have special abilities in water.",
+  
+    "power.wads_class.zero.water_dependency.name": "Water Dependency",
+    "power.wads_class.zero.water_dependency.description": "You need to stay hydrated to survive.",
+  
+    "power.wads_class.zero.strength_and_speed.name": "Aquatic Prowess",
+    "power.wads_class.zero.strength_and_speed.description": "You are stronger and faster in water.",
+  
+    "power.wads_class.zero.nether_timer.name": "Nether Timer",
+    "power.wads_class.zero.nether_timer.description": "You can only stay in the Nether for a limited time.",
+
+  
+    "origin.wads_class.ryona.name": "Ryona",
+    "origin.wads_class.ryona.description": "A nimble being with enhanced jumping and falling abilities.",
+  
+    "power.wads_class.ryona.fall.name": "Graceful Fall",
+    "power.wads_class.ryona.fall.description": "You take reduced fall damage.",
+  
+    "power.wads_class.ryona.jump.name": "Enhanced Jump",
+    "power.wads_class.ryona.jump.description": "You can jump higher than normal.",
+  
+    "power.wads_class.ryona.dash.name": "Quick Dash",
+    "power.wads_class.ryona.dash.description": "You can perform a quick dash in any direction.",
+  
+    "power.wads_class.ryona.jump_boost.name": "Jump Boost",
+    "power.wads_class.ryona.jump_boost.description": "You can activate a temporary jump boost.",
+  
+    "power.wads_class.ryona.friend.name": "Friendly Cushion",
+    "power.wads_class.ryona.friend.description": "You can give nearby entities slow falling."
+  }

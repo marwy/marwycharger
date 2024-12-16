@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "wads_class:chucky/fire_immunity",
+        "wads_class:chucky/water_freeze",
+        "wads_class:chucky/nether_resistance",
+        "wads_class:chucky/rain_damage",
+        "wads_class:chucky/temporary_flight",
+        "wads_class:chucky/lava_vision",
+        "wads_class:chucky/lava_swimming",
+        "wads_class:chucky/lava_charge"
+    ],
+    "icon": "minecraft:blaze_powder",
+    "order": 3,
+    "impact": 3,
+    "name": "origin.wads_class.chucky.name",
+    "description": "origin.wads_class.chucky.description"
+  }

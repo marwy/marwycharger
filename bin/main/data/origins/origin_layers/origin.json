@@ -1,0 +1,9 @@
+{
+	"replace": true,
+	"origins": [
+		"wads_class:marwy",
+		"wads_class:zero",
+		"wads_class:ryona"
+	],
+	"enabled": true
+}

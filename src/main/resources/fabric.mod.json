@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "marwy",
+  "version": "${version}",
+  "name": "Charger",
+  "description": "A mod that adds a charging station for robots, integrated with Create mod.",
+  "authors": [
+    "Marwy"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/marwy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "value": "org.marwy.charger.ChargingStationMod"
+      }
+    ],
+    "client": [
+      {
+        "value": "org.marwy.client.chargerClient"
+      }
+    ]
+  },
+  "mixins": [
+    "marwy.mixins.json",
+    {
+      "config": "marwy.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.20.1",
+    "create": ">=0.5.0"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

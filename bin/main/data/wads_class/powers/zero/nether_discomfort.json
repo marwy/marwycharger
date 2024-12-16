@@ -1,0 +1,26 @@
+{
+    "type": "origins:multiple",
+    "nether_slowness": {
+      "type": "origins:conditioned_attribute",
+      "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_total",
+        "value": -0.2
+      },
+      "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
+      }
+    },
+    "nether_hunger": {
+      "type": "origins:modify_exhaustion",
+      "modifier": {
+        "operation": "multiply_total",
+        "value": 1.5
+      },
+      "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
+      }
+    }
+  }

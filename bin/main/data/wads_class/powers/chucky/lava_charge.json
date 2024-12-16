@@ -1,0 +1,117 @@
+{
+    "type": "origins:multiple",
+    "charge": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 24000,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 7
+      }
+    },
+    "lava_recharge": {
+      "type": "origins:action_over_time",
+      "interval": 1,
+      "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:in_block",
+              "block_condition": {
+                "type": "origins:block",
+                "block": "minecraft:lava"
+              }
+            },
+            {
+              "type": "origins:dimension",
+              "dimension": "minecraft:the_nether"
+            }
+          ]
+        },
+        "if_action": {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:in_block",
+            "block_condition": {
+              "type": "origins:block",
+              "block": "minecraft:lava"
+            }
+          },
+          "if_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_charge",
+            "change": 100
+          },
+          "else_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_charge",
+            "change": 10
+          }
+        },
+        "else_action": {
+          "type": "origins:change_resource",
+          "resource": "*:*_charge",
+          "change": -1
+        }
+      }
+    },
+    "effect_when_discharged": {
+      "type": "origins:action_over_time",
+      "interval": 20,
+      "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:resource",
+          "resource": "*:*_charge",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        "if_action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:apply_effect",
+              "effect": {
+                "effect": "minecraft:weakness",
+                "duration": 100,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+              }
+            },
+            {
+              "type": "origins:apply_effect",
+              "effect": {
+                "effect": "minecraft:slowness",
+                "duration": 100,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+              }
+            },
+            {
+              "type": "origins:apply_effect",
+              "effect": {
+                "effect": "minecraft:blindness",
+                "duration": 100,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+              }
+            }
+          ]
+        },
+        "else_action": {
+          "type": "origins:clear_effect",
+          "effect": "minecraft:weakness"
+        }
+      }
+    }
+  }

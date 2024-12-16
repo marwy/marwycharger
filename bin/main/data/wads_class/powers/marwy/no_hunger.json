@@ -1,0 +1,39 @@
+{
+  "type": "origins:multiple",
+  "disable_hunger": {
+    "type": "origins:disable_regen"
+  },
+  "energy_instead_of_food": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:food_level",
+        "comparison": "<",
+        "compare_to": 20
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:change_resource",
+            "resource": "wads_class:robot_energy",
+            "change": -1
+          },
+          {
+            "type": "origins:feed",
+            "food": 1,
+            "saturation": 1
+          }
+        ]
+      }
+    }
+  },
+  "prevent_eating": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:food"
+    }
+  }
+}

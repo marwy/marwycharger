@@ -1,0 +1,7 @@
+{
+    "type": "origins:prevent_entity_use",
+    "entity_condition": {
+      "type": "origins:entity_type",
+      "entity_type": "minecraft:villager"
+    }
+  }

@@ -1,0 +1,70 @@
+{
+  "type": "origins:multiple",
+  "normal_drain": {
+    "type": "origins:action_over_time",
+    "interval": 1200,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "wads_class:marwy/robot_energy",
+          "change": -1
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "wads_class:marwy/robot_energy",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:dimension",
+              "dimension": "minecraft:overworld"
+            },
+            {
+              "type": "origins:dimension",
+              "dimension": "minecraft:the_end"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "nether_drain": {
+    "type": "origins:action_over_time",
+    "interval": 800,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "wads_class:marwy/robot_energy",
+          "change": -1
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "wads_class:marwy/robot_energy",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:dimension",
+          "dimension": "minecraft:the_nether"
+        }
+      ]
+    }
+  }
+}

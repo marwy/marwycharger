@@ -1,0 +1,42 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:heal",
+        "amount": 2
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "wads_class:marwy/robot_energy",
+        "change": -1
+      }
+    ]
+  },
+  "cooldown": 400,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 3
+  },
+  "key": {
+    "key": "key.origins.secondary_active"
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:resource",
+        "resource": "wads_class:marwy/robot_energy",
+        "comparison": ">",
+        "compare_to": 0
+      },
+      {
+        "type": "origins:health",
+        "comparison": "<",
+        "compare_to": 20
+      }
+    ]
+  }
+}
